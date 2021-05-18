@@ -27,3 +27,7 @@ BackEnd : node.js , react native ⇒ Mobile, electron ⇒ PC application
 ### Leran JavaScript
 
 [기초 (Hello world ~ if , for)](https://www.notion.so/Hello-world-if-for-74222b22e3c54d9a9a8e0b68012564d7)
+
+## 수기 NOTE
+
+![수기노트 1](./handNote/JavaScript-3.jpg)
