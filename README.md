@@ -87,8 +87,6 @@ AirPod Pro 웹 사이트를 Clone 코딩을 하면서, offsetY 에 대한 contro
 
 ES6 문법에 대한 공부 필요!!
 
-![img](./handNote/JavaScript-2.jpg)
-
 # 5월 19일
 
 ### 1. 모르는 점 :
@@ -119,6 +117,7 @@ Arrow Function 부터 막히기 시작한다..
 
 javascript 코드가 읽히는 과정에 대해서 조금 더 생각하면서 코드 짜기!
 
+![img](./handNote/JavaScript-2.jpg)
 ![img](./handNote/JavaScript-3.jpg)
 
 # 5월 20일
