@@ -51,3 +51,10 @@ console.log(fruits);
 
 console.log(fruits.indexOf('🍎'));
 console.log(fruits.includes('망고'));
+
+// playground
+console.clear();
+
+const arr = [6, 2, 4, 6, 3, 345];
+
+console.log(arr.sort());

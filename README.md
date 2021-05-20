@@ -87,6 +87,8 @@ AirPod Pro 웹 사이트를 Clone 코딩을 하면서, offsetY 에 대한 contro
 
 ES6 문법에 대한 공부 필요!!
 
+![img](./handNote/JavaScript-2)
+
 # 5월 19일
 
 ### 1. 모르는 점 :
@@ -116,3 +118,28 @@ Arrow Function 부터 막히기 시작한다..
 ### 3. 개선할 점 :
 
 javascript 코드가 읽히는 과정에 대해서 조금 더 생각하면서 코드 짜기!
+
+![img](./handNote/JavaScript-3)
+
+# 5월 20일
+
+### 1. 모르는 점 :
+
+함수에 함수를 부르고 뭔가를 계속 연속적으로 호출하는 것을 잘 못하겠다.
+
+> 예를 들어, `const deleteUser = (user) => users = users.filter(aUser => aUser !== user)` 이런..
+
+### 2. 배운 점 :
+
+this 에 대한 감이 아주 조금 잡혔다.
+
+Array Interface 를 공부하고 있다.  
+다른 function 이나 this 등등 모르는게 있으면 **⌘ + Click** 을 하면 문서를 볼 수 있더라
+
+코드를 치는 것도 좋지만 이론 공부 할 때는 손코딩이 더 좋은 것 같다.
+
+### 3. 개선할 점 :
+
+공부하다가 모를 때에는 googling 전에 공식 문서 확인 할 것
+
+![img](./handNote/JavaScript-4)
