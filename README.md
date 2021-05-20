@@ -87,7 +87,7 @@ AirPod Pro 웹 사이트를 Clone 코딩을 하면서, offsetY 에 대한 contro
 
 ES6 문법에 대한 공부 필요!!
 
-![img](./handNote/JavaScript-2)
+![img](./handNote/JavaScript-2.jpg)
 
 # 5월 19일
 
@@ -119,7 +119,7 @@ Arrow Function 부터 막히기 시작한다..
 
 javascript 코드가 읽히는 과정에 대해서 조금 더 생각하면서 코드 짜기!
 
-![img](./handNote/JavaScript-3)
+![img](./handNote/JavaScript-3.jpg)
 
 # 5월 20일
 
@@ -142,4 +142,4 @@ Array Interface 를 공부하고 있다.
 
 공부하다가 모를 때에는 googling 전에 공식 문서 확인 할 것
 
-![img](./handNote/JavaScript-4)
+![img](handNote/JavaScript-4.jpg)
