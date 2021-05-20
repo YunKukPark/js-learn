@@ -58,3 +58,11 @@ console.clear();
 const arr = [6, 2, 4, 6, 3, 345];
 
 console.log(arr.sort());
+
+const draw = (function () {
+  console.log('hi');
+})();
+
+const array = ['yunkuk', 'seoyoung'];
+
+array.forEach((name) => console.log(name));
