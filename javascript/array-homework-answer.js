@@ -7,6 +7,12 @@
   console.log(result);
 }
 
+{
+  const sayHi = (name) => console.log(`${name}님 안녕하세요`);
+
+  console.log(sayHi('윤국'));
+}
+
 // Q2. make an array out of a string
 {
   const fruits = '🍎, 🥝, 🍌, 🍒';
@@ -78,7 +84,6 @@ const students = [
 
 // Q8. check if there is a student with the score lower than 50
 {
-  console.clear();
   const result = students.some((student) => student.score < 50);
   console.log(result);
   const result2 = !students.every((student) => student.score >= 50);
