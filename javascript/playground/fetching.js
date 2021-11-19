@@ -43,3 +43,18 @@ axios
     htmlConsole.innerHTML = memo[0].title;
   })
   .catch((err) => console.log(`님 여기 에러남 에러 대충 이거임 => ${err}`));
+
+fetch(APIURL, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    id: 2,
+    body: 'I am testing!',
+    title: 'Test',
+  }),
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((err) => console.log(`에러입니다 형님 ${err}`));
