@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 700px;
+  height: 400px;
+}
+
+.img-wrapper {
+  width: 500px;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 800px;
+}
+
+.input-wrapper input {
+  width: 80%;
+  height: 48px;
+  font-size: 1.3em;
+  padding-left: 56px;
+  padding-right: 115px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+}
+
+.input-wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4em;
+}
+
+.input-wrapper i.fa-search {
+  left: 20px;
+}
+
+.input-wrapper i.fa-keyboard {
+  right: 45px;
+}
+
+.input-wrapper i.fa-microphone {
+  right: 11px;
+  color: #4f86ec;
+}
+
+/* TODO: img 관련 처리 하기 */
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper a {
+  padding: 15px;
+  color: #65666a;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.button-wrapper a:first-child {
+  margin-right: 20px;
+}
+
+.service strong {
+  font-weight: 400;
+}
+
+.service a {
+  color: #4145b5;
+}
