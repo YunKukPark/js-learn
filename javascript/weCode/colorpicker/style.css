@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 375px;
+  height: 415px;
+  background-color: #ebeff3;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.color-box-wrap {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.color-box-wrap .color-hex {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+}
+
+.color-box {
+  position: relative;
+  width: 325px;
+  height: 300px;
+  background-color: #709fb0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.color-box:hover {
+  box-shadow: 20px 20px 100px #bebebe, -20px -20px 100px #ffffff;
+}
+
+.color-box-wrap .color-hex {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.color-box:hover ~ .color-hex {
+  opacity: 1;
+}
+
+.color-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.color-info .left {
+  border: 1px solid #b7babd;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.color-info .left .fa-heart {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+
+.color-info .left .fa-heart:hover {
+  color: #ff4747;
+}
