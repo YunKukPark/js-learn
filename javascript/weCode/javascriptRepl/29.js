@@ -1,3 +1,7 @@
+import { compose } from './compose.js';
+
+console.dir(compose);
+
 const numsInput = [100, 9, 30, 7];
 const datesInput = ['2019-03-21', '2019-04-21', '2019-05-21'];
 
@@ -9,6 +13,10 @@ const moreThan100 = (nums) => {
 const formatDate = (dates) => {
   return numberDate2formatDate(removedDash(dates));
 };
+
+// const formatDate = (dates) =>{
+//   return Compose
+// }
 
 const removedDash = (arr) => {
   return arr.map((item) => item.replace(/-/gi, ''));
