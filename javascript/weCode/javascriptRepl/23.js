@@ -6,11 +6,11 @@ function getData(salesArr, reviewArr, likeArr) {
 }
 
 const sumCount = (array) => {
+  const VALUE_INDEX_IN_ARRAY = 1;
+
   const sum = array
-    .map((row) => {
-      return row[1]; // 숫자 정보만 빼기
-    })
-    .reduce((total, curr) => total + curr, 0); // 숫자 정보 합산
+    .map((row) => row[VALUE_INDEX_IN_ARRAY])
+    .reduce((total, curr) => total + curr, 0);
 
   return sum;
 };
@@ -31,5 +31,4 @@ const like = [
   ['20190403', 125],
 ];
 
-getData(sale, review, like);
-sumAmount(sale);
+console.log(getData(sale, review, like));
