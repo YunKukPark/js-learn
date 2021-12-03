@@ -1,7 +1,3 @@
-import { compose } from './compose.js';
-
-console.dir(compose);
-
 const numsInput = [100, 9, 30, 7];
 const datesInput = ['2019-03-21', '2019-04-21', '2019-05-21'];
 
@@ -10,31 +6,22 @@ const moreThan100 = (nums) => {
   return isMoreThan100;
 };
 
-const formatDate = (dates) => {
-  return numberDate2formatDate(removedDash(dates));
-};
+const formatDate = (dates) => compose(insertFormat, getDateTable)(dates);
 
-// const formatDate = (dates) =>{
-//   return Compose
-// }
+const insertFormat = (dateTable) =>
+  dateTable.map((row) => `${row[0]}년 ${row[1]}월 ${row[2]}일`);
 
-const removedDash = (arr) => {
-  return arr.map((item) => item.replace(/-/gi, ''));
-};
+const getDateTable = (dates) => dates.map((date) => date.split('-'));
 
-const numberDate2formatDate = (dates) => {
-  const indexOfYear = /(.{4})/;
-  const indexOfMonth = /(.{8})/;
-  const indexOfDay = /(.{12})/;
+const compose = (...funcArr) =>
+  funcArr.reduce(
+    (prevFunc, nextFunc) =>
+      (...args) =>
+        nextFunc(prevFunc(...args)),
+    function (k) {
+      return k;
+    }
+  );
 
-  const formatedDate = dates.map((date) => {
-    return date
-      .replace(indexOfYear, '$1년 ')
-      .replace(indexOfMonth, '$1월 ')
-      .replace(indexOfDay, '$1일');
-  });
-  return formatedDate;
-};
-
-console.log(moreThan100(numsInput));
-console.log(formatDate(datesInput));
+console.table(moreThan100(numsInput));
+console.table(formatDate(datesInput));
