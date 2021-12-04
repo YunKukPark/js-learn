@@ -1,24 +1,16 @@
-// 강의 내용과 관련된 코드를 작성하세요.
-
-// 이거 함정문제 : 미쿡인들은 '생일'이 지나야 한살먹는다.
-
 function getWesternAge(birthday) {
   const now = new Date();
-  const nowYear = now.getFullYear(); // 현재 항상 2021
+  const isBorned = birthday.getTime() < now.getTime();
+  if (!isBorned) return '님 아직 안태어났잖아요';
 
+  const nowYear = now.getFullYear();
   const isBirthdayPassed = checkBirthdayPassed(now, birthday);
+  const age = nowYear - birthday.getFullYear();
 
-  console.log(`isBirthdayPassed: ${isBirthdayPassed}`);
-
-  if (isBirthdayPassed) {
-    return nowYear - birthday.getFullYear();
-  } else {
-    return nowYear - birthday.getFullYear() - 1;
-  }
+  return isBirthdayPassed ? age : age - 1;
 }
 
 const checkBirthdayPassed = (now, birthday) => {
-  console.log(`birthday : ${birthday}`);
   const today = {
     month: now.getMonth() + 1,
     date: now.getDate(),
@@ -30,18 +22,11 @@ const checkBirthdayPassed = (now, birthday) => {
   };
 
   const leftedMonth = today.month - birth.month;
-  console.log(today, birth);
 
-  if (leftedMonth < 0 || (leftedMonth === 0 && today.date <= birth.date)) {
-    return false;
-  } else {
-    return true;
-  }
+  leftedMonth < 0 || (leftedMonth === 0 && today.date <= birth.date)
+    ? false
+    : true;
 };
 
-let date3 = new Date('December 1, 2019 03:24:00');
-
-getWesternAge(date3);
-
-// 아래의 코드는 절대로 수정하거나 삭제하지 마세요.
-module.exports = { getWesternAge };
+let date3 = new Date('December 14, 1945 03:24:00');
+console.log(getWesternAge(date3));
