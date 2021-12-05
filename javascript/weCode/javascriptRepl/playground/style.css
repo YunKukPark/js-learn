@@ -3,44 +3,40 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.content {
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  width: 600px;
+  height: 680px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.color-picker-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #ebeff3;
-  width: 380px;
-  height: 410px;
+}
+
+.color-box {
+  width: 520px;
+  height: 520px;
+  background-color: #709fb3;
   border-radius: 10px;
-}
-
-.colorbox {
-  background-color: #709fb0;
-  width: 300px;
-  height: 330px;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.colorbox span {
-  color: white;
-  background: #59818f;
-  opacity: 0;
-}
-
-.colorbox:hover > span {
-  opacity: 1;
-}
-
-.heyho {
-  display: flex;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: space-between;
 }
